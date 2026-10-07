@@ -8,15 +8,12 @@
     box-sizing: border-box;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
 
-
 body {
     font-family: "DM Sans", sans-serif;
-
     color: white;
 
     background:
@@ -25,19 +22,16 @@ body {
             #642b86 0%,
             transparent 35%
         ),
-
         radial-gradient(
             circle at 10% 70%,
             #3b1454 0%,
             transparent 30%
         ),
-
         radial-gradient(
             circle at 90% 80%,
             #261039 0%,
             transparent 30%
         ),
-
         #10051c;
 
     overflow-x: hidden;
@@ -50,13 +44,9 @@ body {
 
 .stars {
     position: fixed;
-
     inset: 0;
-
     z-index: 0;
-
     pointer-events: none;
-
     opacity: .25;
 
     background-image:
@@ -67,13 +57,10 @@ body {
         );
 
     background-size: 90px 90px;
-
     animation: starsMove 25s linear infinite;
 }
 
-
 @keyframes starsMove {
-
     from {
         background-position: 0 0;
     }
@@ -81,9 +68,7 @@ body {
     to {
         background-position: 90px 90px;
     }
-
 }
-
 
 
 /* ========================================
@@ -91,15 +76,10 @@ body {
 ======================================== */
 
 .container {
-
     width: min(900px, 92%);
-
     margin: auto;
-
     text-align: center;
-
 }
-
 
 
 /* ========================================
@@ -107,23 +87,16 @@ body {
 ======================================== */
 
 section {
-
     position: relative;
-
     z-index: 2;
 
     min-height: 100vh;
-
     padding: 100px 20px;
 
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
 }
-
 
 
 /* ========================================
@@ -131,31 +104,19 @@ section {
 ======================================== */
 
 .hero {
-
     min-height: 100vh;
-
 }
-
 
 .little-title {
-
     color: #ff9fdf;
-
     font-size: .85rem;
-
     letter-spacing: 5px;
-
     font-weight: 600;
-
     margin-bottom: 25px;
-
 }
 
-
 h1 {
-
     font-family: "Great Vibes", cursive;
-
     font-weight: 400;
 
     font-size: clamp(
@@ -167,38 +128,18 @@ h1 {
     line-height: .9;
 
     text-shadow:
-
-        0 0 15px rgba(
-            255,
-            143,
-            216,
-            .4
-        ),
-
-        0 0 50px rgba(
-            142,
-            75,
-            183,
-            .5
-        );
-
+        0 0 15px rgba(255, 143, 216, .4),
+        0 0 50px rgba(142, 75, 183, .5);
 }
 
-
 .hero-text {
-
     max-width: 620px;
-
     margin: 35px auto;
 
     color: #e5d7ea;
-
     line-height: 1.9;
-
     font-size: 1rem;
-
 }
-
 
 
 /* ========================================
@@ -206,14 +147,7 @@ h1 {
 ======================================== */
 
 .main-button {
-
-    border: 1px solid
-        rgba(
-            255,
-            255,
-            255,
-            .2
-        );
+    border: 1px solid rgba(255, 255, 255, .2);
 
     color: white;
 
@@ -225,46 +159,26 @@ h1 {
         );
 
     padding: 15px 30px;
-
     border-radius: 999px;
 
     font-family: inherit;
-
     font-size: 1rem;
 
     cursor: pointer;
-
     transition: .3s;
 
     box-shadow:
-        0 10px 35px
-        rgba(
-            0,
-            0,
-            0,
-            .3
-        );
-
+        0 10px 35px rgba(0, 0, 0, .3);
 }
 
-
 .main-button:hover {
-
     transform:
         translateY(-5px)
         scale(1.02);
 
     box-shadow:
-        0 15px 45px
-        rgba(
-            255,
-            143,
-            216,
-            .25
-        );
-
+        0 15px 45px rgba(255, 143, 216, .25);
 }
-
 
 
 /* ========================================
@@ -272,53 +186,26 @@ h1 {
 ======================================== */
 
 .glass-card {
-
     position: relative;
 
     padding: 55px;
-
     border-radius: 30px;
 
     background:
-        rgba(
-            255,
-            255,
-            255,
-            .055
-        );
+        rgba(255, 255, 255, .055);
 
     border:
-        1px solid
-        rgba(
-            255,
-            255,
-            255,
-            .14
-        );
+        1px solid rgba(255, 255, 255, .14);
 
-    backdrop-filter:
-        blur(18px);
-
-    -webkit-backdrop-filter:
-        blur(18px);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
 
     box-shadow:
-        0 25px 80px
-        rgba(
-            0,
-            0,
-            0,
-            .3
-        );
-
+        0 25px 80px rgba(0, 0, 0, .3);
 }
 
-
 h2 {
-
-    font-family:
-        "Great Vibes",
-        cursive;
+    font-family: "Great Vibes", cursive;
 
     font-size:
         clamp(
@@ -328,33 +215,21 @@ h2 {
         );
 
     font-weight: 400;
-
     color: #ffd3ef;
 
     margin-bottom: 30px;
-
 }
-
 
 .paragraph {
-
     color: #e8ddea;
-
     line-height: 2;
-
     font-size: 1.05rem;
-
     margin-bottom: 25px;
-
 }
-
 
 strong {
-
     color: white;
-
 }
-
 
 
 /* ========================================
@@ -362,104 +237,57 @@ strong {
 ======================================== */
 
 .memory-grid {
-
     display: grid;
 
     grid-template-columns:
-        repeat(
-            3,
-            1fr
-        );
+        repeat(3, 1fr);
 
     gap: 18px;
-
     margin-top: 45px;
-
 }
 
-
 .memory-card {
-
     padding: 28px 20px;
-
     min-height: 220px;
 
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     flex-direction: column;
 
     border-radius: 24px;
 
     background:
-        rgba(
-            255,
-            255,
-            255,
-            .045
-        );
+        rgba(255, 255, 255, .045);
 
     border:
-        1px solid
-        rgba(
-            255,
-            255,
-            255,
-            .1
-        );
+        1px solid rgba(255, 255, 255, .1);
 
     transition: .35s;
-
 }
-
 
 .memory-card:hover {
-
-    transform:
-        translateY(-8px);
+    transform: translateY(-8px);
 
     background:
-        rgba(
-            255,
-            143,
-            216,
-            .08
-        );
-
+        rgba(255, 143, 216, .08);
 }
-
 
 .memory-icon {
-
     font-size: 2.5rem;
-
     margin-bottom: 15px;
-
     color: #ff9fdf;
-
 }
-
 
 .memory-card h3 {
-
     margin-bottom: 12px;
-
 }
-
 
 .memory-card p {
-
     color: #d9ccdf;
-
     line-height: 1.6;
-
     font-size: .9rem;
-
 }
-
 
 
 /* ========================================
@@ -467,68 +295,41 @@ strong {
 ======================================== */
 
 .letter {
-
     text-align: left;
-
 }
 
-
 .letter::after {
-
     content: "13";
 
     position: absolute;
-
     right: 35px;
-
     top: 20px;
 
-    font-family:
-        "Great Vibes",
-        cursive;
+    font-family: "Great Vibes", cursive;
 
     font-size: 5rem;
 
     color:
-        rgba(
-            255,
-            143,
-            216,
-            .08
-        );
-
+        rgba(255, 143, 216, .08);
 }
-
 
 .letter p {
-
     color: #eadfed;
-
     line-height: 2;
-
     margin-bottom: 25px;
-
     font-size: 1.05rem;
-
 }
 
-
 .signature {
-
     text-align: right;
 
-    font-family:
-        "Great Vibes",
-        cursive;
+    font-family: "Great Vibes", cursive;
 
     color: #ff9fdf;
-
     font-size: 3rem;
 
     margin-top: 45px;
-
 }
-
 
 
 /* ========================================
@@ -536,21 +337,14 @@ strong {
 ======================================== */
 
 .final-section {
-
     min-height: 100vh;
-
 }
-
 
 .final-card {
-
     overflow: hidden;
-
 }
 
-
 .big-question {
-
     font-size:
         clamp(
             4rem,
@@ -559,65 +353,33 @@ strong {
         );
 
     margin-bottom: 25px;
-
 }
-
 
 .final-text {
-
     color: #eadfed;
-
     line-height: 2;
-
     font-size: 1.05rem;
-
 }
 
-
 .question-box {
-
-    margin:
-        45px auto;
-
-    padding:
-        35px 20px;
+    margin: 45px auto;
+    padding: 35px 20px;
 
     border-radius: 25px;
 
     background:
         linear-gradient(
             135deg,
-            rgba(
-                255,
-                143,
-                216,
-                .1
-            ),
-            rgba(
-                142,
-                75,
-                183,
-                .12
-            )
+            rgba(255, 143, 216, .1),
+            rgba(142, 75, 183, .12)
         );
 
     border:
-        1px solid
-        rgba(
-            255,
-            143,
-            216,
-            .25
-        );
-
+        1px solid rgba(255, 143, 216, .25);
 }
 
-
 .question-box p {
-
-    font-family:
-        "Great Vibes",
-        cursive;
+    font-family: "Great Vibes", cursive;
 
     font-size:
         clamp(
@@ -627,122 +389,74 @@ strong {
         );
 
     color: white;
-
 }
 
-
 .final-small {
-
     max-width: 600px;
-
     margin: auto;
 
     color: #cfc1d6;
-
     line-height: 1.8;
-
 }
 
-
 .buttons {
-
     margin-top: 35px;
 
     display: flex;
-
     justify-content: center;
 
     gap: 15px;
-
     flex-wrap: wrap;
-
 }
 
-
 .yes-button {
-
     background:
         linear-gradient(
             135deg,
             #e95bb5,
             #8e4bb7
         );
-
 }
-
 
 .talk-button {
-
     background:
-        rgba(
-            255,
-            255,
-            255,
-            .06
-        );
-
+        rgba(255, 255, 255, .06);
 }
 
-
 .hidden-message {
-
     margin-top: 45px;
-
     display: none;
 
     animation:
         messageAppear
         1s ease forwards;
-
 }
 
-
 @keyframes messageAppear {
-
     from {
-
         opacity: 0;
-
-        transform:
-            translateY(20px);
-
+        transform: translateY(20px);
     }
 
     to {
-
         opacity: 1;
-
-        transform:
-            translateY(0);
-
+        transform: translateY(0);
     }
-
 }
 
-
 .hidden-message h3 {
-
-    font-family:
-        "Great Vibes",
-        cursive;
+    font-family: "Great Vibes", cursive;
 
     font-size: 4rem;
-
     color: #ff9fdf;
 
     margin-bottom: 20px;
-
 }
-
 
 .hidden-message p {
-
     color: #eadfed;
-
     line-height: 1.8;
-
 }
-
 
 
 /* ========================================
@@ -750,57 +464,41 @@ strong {
 ======================================== */
 
 .floating-heart {
-
     position: fixed;
-
     bottom: -30px;
 
     z-index: 1;
-
     pointer-events: none;
 
     animation:
         floatHeart
         linear
         forwards;
-
 }
 
-
 @keyframes floatHeart {
-
     0% {
-
         transform:
             translateY(0)
             scale(.6)
             rotate(0deg);
 
         opacity: 0;
-
     }
-
 
     15% {
-
         opacity: .8;
-
     }
 
-
     100% {
-
         transform:
             translateY(-110vh)
             scale(1.3)
             rotate(25deg);
 
         opacity: 0;
-
     }
-
 }
-
 
 
 /* ========================================
@@ -809,6 +507,7 @@ strong {
 
 .character {
     position: absolute;
+
     z-index: 3;
     pointer-events: none;
 }
@@ -826,14 +525,22 @@ strong {
     width: 115px;
 }
 
+
+/*
+   PORTADA
+
+   Kuromi arriba izquierda
+   Badtz abajo derecha
+*/
+
 .kuromi {
     left: 25px;
-    top: 180px;
+    top: 150px;
 }
 
 .badtz {
     right: 25px;
-    top: 180px;
+    bottom: 80px;
 }
 
 
@@ -841,39 +548,42 @@ strong {
    PERSONAJES DENTRO DE LAS SECCIONES
 ======================================== */
 
-.glass-card {
-    position: relative;
-}
-
-
-/* Base */
-
 .section-character {
     position: absolute;
-    z-index: 4;
+
+    z-index: 5;
     pointer-events: none;
 }
 
 .section-character img {
     display: block;
-    width: 120px;
+
     height: auto;
+
     filter:
         drop-shadow(
             0 10px 18px
             rgba(0, 0, 0, .4)
         );
+
+    transition:
+        transform .35s ease,
+        opacity .35s ease;
 }
 
 
 /* ========================================
-   KUROMI - RECUERDOS
+   KUROMI
+   ABAJO A LA IZQUIERDA
 ======================================== */
 
 .kuromi-memory {
-    left: -95px;
-    top: 50%;
-    transform: translateY(-50%) rotate(-8deg);
+    left: -45px;
+    bottom: -35px;
+
+    top: auto;
+
+    transform: rotate(-8deg);
 }
 
 .kuromi-memory img {
@@ -882,13 +592,17 @@ strong {
 
 
 /* ========================================
-   BADTZ - RECUERDOS
+   BADTZ
+   ARRIBA A LA DERECHA
 ======================================== */
 
 .badtz-memory {
-    right: -90px;
-    top: 50%;
-    transform: translateY(-50%) rotate(8deg);
+    right: -45px;
+    top: -35px;
+
+    bottom: auto;
+
+    transform: rotate(8deg);
 }
 
 .badtz-memory img {
@@ -897,24 +611,24 @@ strong {
 
 
 /* ========================================
-   KUROMI - "TE ENCONTRARÍA OTRA VEZ"
-======================================== */
-
-.kuromi-memory:nth-of-type(1) {
-    left: -95px;
-}
-
-
-/* ========================================
    PERSONAJES DE LA CARTA
 ======================================== */
 
+/*
+   Kuromi abajo izquierda
+*/
+
 .kuromi-letter {
     position: absolute;
-    left: -100px;
-    top: 120px;
-    z-index: 4;
+
+    left: -45px;
+    bottom: -35px;
+
+    top: auto;
+
+    z-index: 5;
     pointer-events: none;
+
     transform: rotate(-8deg);
 }
 
@@ -924,12 +638,21 @@ strong {
 }
 
 
+/*
+   Badtz arriba derecha
+*/
+
 .badtz-letter {
     position: absolute;
-    right: -95px;
-    bottom: 120px;
-    z-index: 4;
+
+    right: -45px;
+    top: -35px;
+
+    bottom: auto;
+
+    z-index: 5;
     pointer-events: none;
+
     transform: rotate(8deg);
 }
 
@@ -945,8 +668,10 @@ strong {
 
 .together-character {
     display: flex;
+
     justify-content: center;
     align-items: center;
+
     margin-bottom: 25px;
 }
 
@@ -954,17 +679,19 @@ strong {
     width: 180px;
     max-width: 60%;
     height: auto;
+
     filter:
         drop-shadow(
             0 12px 25px
             rgba(0, 0, 0, .45)
         );
-    animation: togetherAppear 1s ease;
+
+    animation:
+        togetherAppear
+        1s ease;
 }
 
-
 @keyframes togetherAppear {
-
     from {
         opacity: 0;
         transform: scale(.7);
@@ -974,23 +701,11 @@ strong {
         opacity: 1;
         transform: scale(1);
     }
-
 }
 
 
 /* ========================================
-   ANIMACIÓN PERSONAJES
-======================================== */
-
-.section-character img {
-    transition:
-        transform .35s ease,
-        opacity .35s ease;
-}
-
-
-/* ========================================
-   CELULAR
+   TABLET
 ======================================== */
 
 @media (max-width: 900px) {
@@ -1005,49 +720,44 @@ strong {
 
     .kuromi {
         left: 5px;
-        top: 150px;
+        top: 140px;
     }
 
     .badtz {
         right: 5px;
-        top: 150px;
+        bottom: 60px;
     }
 
-    /* En celular los ponemos un poco
-       más cerca de la tarjeta */
-
     .kuromi-memory {
-        left: -45px;
+        left: -35px;
+        bottom: -25px;
     }
 
     .badtz-memory {
-        right: -40px;
+        right: -35px;
+        top: -25px;
     }
 
-    .kuromi-memory img {
-        width: 75px;
+    .kuromi-memory img,
+    .kuromi-letter img {
+        width: 85px;
     }
 
-    .badtz-memory img {
-        width: 70px;
+    .badtz-memory img,
+    .badtz-letter img {
+        width: 78px;
     }
 
     .kuromi-letter {
-        left: -45px;
-        top: 100px;
+        left: -35px;
+        bottom: -25px;
+        top: auto;
     }
 
     .badtz-letter {
-        right: -40px;
-        bottom: 100px;
-    }
-
-    .kuromi-letter img {
-        width: 75px;
-    }
-
-    .badtz-letter img {
-        width: 70px;
+        right: -35px;
+        top: -25px;
+        bottom: auto;
     }
 
     .together-character img {
@@ -1058,54 +768,10 @@ strong {
 
 
 /* ========================================
-   CELULAR CHICO
-======================================== */
-
-@media (max-width: 600px) {
-
-    /* Los personajes de los costados
-       se hacen todavía más chicos */
-
-    .kuromi-memory {
-        left: -25px;
-    }
-
-    .badtz-memory {
-        right: -20px;
-    }
-
-    .kuromi-memory img {
-        width: 60px;
-    }
-
-    .badtz-memory img {
-        width: 55px;
-    }
-
-    .kuromi-letter {
-        left: -25px;
-    }
-
-    .badtz-letter {
-        right: -20px;
-    }
-
-    .kuromi-letter img {
-        width: 60px;
-    }
-
-    .badtz-letter img {
-        width: 55px;
-    }
-    /* ========================================
-   RESPONSIVE - CELULAR
+   CELULAR
 ======================================== */
 
 @media (max-width: 750px) {
-
-    /* -------------------------------
-       SECCIONES
-    ------------------------------- */
 
     section {
         min-height: auto;
@@ -1118,9 +784,7 @@ strong {
     }
 
 
-    /* -------------------------------
-       TARJETAS
-    ------------------------------- */
+    /* TARJETAS */
 
     .glass-card {
         width: 100%;
@@ -1129,12 +793,15 @@ strong {
     }
 
 
-    /* -------------------------------
-       PORTADA
-    ------------------------------- */
+    /* PORTADA */
 
     h1 {
-        font-size: clamp(4rem, 18vw, 6rem);
+        font-size:
+            clamp(
+                4rem,
+                18vw,
+                6rem
+            );
     }
 
     .hero-text {
@@ -1144,12 +811,15 @@ strong {
     }
 
 
-    /* -------------------------------
-       TÍTULOS
-    ------------------------------- */
+    /* TÍTULOS */
 
     h2 {
-        font-size: clamp(3rem, 15vw, 4.5rem);
+        font-size:
+            clamp(
+                3rem,
+                15vw,
+                4.5rem
+            );
     }
 
     .little-title {
@@ -1158,9 +828,7 @@ strong {
     }
 
 
-    /* -------------------------------
-       RECUERDOS
-    ------------------------------- */
+    /* RECUERDOS */
 
     .memory-grid {
         grid-template-columns: 1fr;
@@ -1178,66 +846,72 @@ strong {
     }
 
 
-    /* -------------------------------
-       PERSONAJES DE LA PORTADA
-    ------------------------------- */
+    /* PORTADA */
 
     .kuromi {
-        left: 0;
-        top: 120px;
+        left: -5px;
+        top: 110px;
     }
 
     .badtz {
-        right: 0;
-        top: 120px;
+        right: -5px;
+        bottom: 50px;
+        top: auto;
     }
 
     .kuromi img {
-        width: 75px;
+        width: 70px;
     }
 
     .badtz img {
-        width: 65px;
+        width: 62px;
     }
 
 
-    /* -------------------------------
+    /* ====================================
        PERSONAJES DE LAS SECCIONES
-    ------------------------------- */
-
-    .section-character {
-        z-index: 5;
-    }
+    ==================================== */
 
     /*
-       En celular NO sobresalen demasiado
-       de las tarjetas.
+       KUROMI
+       abajo izquierda
     */
 
     .kuromi-memory {
-        left: -12px;
-        top: 25px;
+        left: -10px;
+        bottom: -22px;
+
+        top: auto;
+
         transform: rotate(-8deg);
     }
 
+    /*
+       BADTZ
+       arriba derecha
+    */
+
     .badtz-memory {
-        right: -10px;
-        top: 25px;
+        right: -8px;
+        top: -22px;
+
+        bottom: auto;
+
         transform: rotate(8deg);
     }
 
     .kuromi-memory img {
-        width: 65px;
+        width: 68px;
     }
 
     .badtz-memory img {
-        width: 58px;
+        width: 60px;
     }
 
 
-    /* -------------------------------
+    /* ====================================
        CARTA
-    ------------------------------- */
+    ==================================== */
 
     .letter {
         padding: 40px 22px;
@@ -1256,37 +930,60 @@ strong {
         font-size: 2.5rem;
     }
 
+
+    /*
+       KUROMI
+       abajo izquierda
+    */
+
     .kuromi-letter {
         left: -10px;
-        top: 70px;
+        bottom: -22px;
+
+        top: auto;
+
         transform: rotate(-8deg);
     }
 
+
+    /*
+       BADTZ
+       arriba derecha
+    */
+
     .badtz-letter {
         right: -8px;
-        bottom: 70px;
+        top: -22px;
+
+        bottom: auto;
+
         transform: rotate(8deg);
     }
 
     .kuromi-letter img {
-        width: 65px;
+        width: 68px;
     }
 
     .badtz-letter img {
-        width: 58px;
+        width: 60px;
     }
 
 
-    /* -------------------------------
+    /* ====================================
        FINAL
-    ------------------------------- */
+    ==================================== */
 
     .final-card {
         padding: 40px 20px;
     }
 
     .big-question {
-        font-size: clamp(4rem, 18vw, 6rem);
+        font-size:
+            clamp(
+                4rem,
+                18vw,
+                6rem
+            );
     }
 
     .final-text {
@@ -1299,7 +996,13 @@ strong {
     }
 
     .question-box p {
-        font-size: clamp(2.2rem, 10vw, 3.5rem);
+        font-size:
+            clamp(
+                2.2rem,
+                10vw,
+                3.5rem
+            );
+
         line-height: 1.1;
     }
 
@@ -1308,9 +1011,7 @@ strong {
     }
 
 
-    /* -------------------------------
-       KUROMI + BADTZ JUNTOS
-    ------------------------------- */
+    /* KUROMI + BADTZ JUNTOS */
 
     .together-character {
         margin-bottom: 20px;
@@ -1322,9 +1023,7 @@ strong {
     }
 
 
-    /* -------------------------------
-       BOTONES
-    ------------------------------- */
+    /* BOTONES */
 
     .buttons {
         flex-direction: column;
@@ -1339,14 +1038,39 @@ strong {
     }
 
 
-    /* -------------------------------
-       CORAZONES
-    ------------------------------- */
+    /* CORAZONES */
 
     .floating-heart {
         font-size: 14px;
     }
-
 }
 
+
+/* ========================================
+   CELULARES MUY CHICOS
+======================================== */
+
+@media (max-width: 400px) {
+
+    .kuromi-memory,
+    .kuromi-letter {
+        left: -5px;
+        bottom: -18px;
+    }
+
+    .badtz-memory,
+    .badtz-letter {
+        right: -5px;
+        top: -18px;
+    }
+
+    .kuromi-memory img,
+    .kuromi-letter img {
+        width: 58px;
+    }
+
+    .badtz-memory img,
+    .badtz-letter img {
+        width: 52px;
+    }
 }

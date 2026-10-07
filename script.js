@@ -98,93 +98,20 @@ setInterval(
 ======================================== */
 
 function answerYes() {
+    const message = document.getElementById("final-message");
 
-    const message =
-        document.getElementById(
-            "final-message"
-        );
+    message.style.display = "block";
 
-
-    message.style.display =
-        "block";
-
-
-    message.innerHTML = `
-
-        <h3>
-            Entonces vení... 💜
-        </h3>
-
-        <p>
-            Volvamos a elegirnos.
-        </p>
-
-        <br>
-
-        <p>
-            Pero esta vez no para volver a ser
-            exactamente quienes éramos.
-        </p>
-
-        <br>
-
-        <p>
-            Sino para ser algo todavía más lindo.
-        </p>
-
-        <br>
-
-        <p>
-            Más tranquilos.
-            Más conscientes.
-            Más nosotros.
-        </p>
-
-        <br>
-
-        <p>
-            Te amo, Morena.
-        </p>
-
-        <br>
-
-        <p style="
-            font-size: 2rem;
-            color: #ff9fdf;
-        ">
-            13 · ∞ · 💙
-        </p>
-
-    `;
-
-
-    /*
-       Explosión de corazones
-    */
-
-    for (
-        let i = 0;
-        i < 60;
-        i++
-    ) {
-
-        setTimeout(
-            createHeart,
-            i * 50
-        );
-
+    for (let i = 0; i < 60; i++) {
+        setTimeout(createHeart, i * 50);
     }
 
-
     setTimeout(() => {
-
         message.scrollIntoView({
             behavior: "smooth",
             block: "center"
         });
-
     }, 300);
-
 }
 
 
@@ -212,41 +139,12 @@ function answerTalk() {
         </h3>
 
         <p>
-            No necesito que me respondas
-            algo por presión.
+            está bien nada JAJAJAJJAJAJJA
         </p>
-
-        <br>
-
-        <p>
-            Si algo aprendí de todo esto,
-            es que lo que sentimos merece
-            ser cuidado y hablado.
-        </p>
-
-        <br>
-
-        <p>
-            Solamente quería que supieras
-            lo que siento.
-        </p>
-
-        <br>
-
-        <p>
-            Y que, pase lo que pase,
-            siempre voy a valorar
-            nuestra historia.
-        </p>
-
-        <br>
-
-        <p style="
-            font-size: 2rem;
-            color: #ff9fdf;
-        ">
-            Siempre vos. 💙
-        </p>
+            <br>
+            <p>dale mami, volve conmigo, te extraño, nos extraño.</p>
+            <br>
+            <p>que sin vos no soy nada ni nadie.</p>
 
     `;
 
